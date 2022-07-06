@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/runtime": "^1.6.22",
     "@prisma/client": "^4.0.0",
     "gray-matter": "^4.0.3",
     "next": "12.2.0",
