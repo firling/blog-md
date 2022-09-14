@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 export default function CustomLink({ as, href, ...otherProps }) {
+  console.log("truc")
   return (
     <>
       <Link as={as} href={href}>

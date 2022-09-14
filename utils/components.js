@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
+import code from '../components/Code'
 import CustomLink from '../components/CustomLink'
 
 // Custom components/renderers to pass to MDX.
@@ -8,9 +9,7 @@ import CustomLink from '../components/CustomLink'
 // here.
 export default {
   a: CustomLink,
-  // It also works with dynamically-imported components, which is especially
-  // useful for conditionally loading components for certain routes.
-  // See the notes in README.md for more details.
   TestComponent: dynamic(() => import('../components/TestComponent')),
   Head,
+  code: code,
 }
