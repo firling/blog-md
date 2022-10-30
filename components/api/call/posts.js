@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const createPost = (body) => axios.post("/api/post/create", {body});
+const createPost = (data) => axios.post("/api/post/create", data);
 
 export default {
   createPost

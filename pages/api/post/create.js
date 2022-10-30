@@ -6,11 +6,11 @@ export default function handler(req, res) {
         res.status(405).send({ message: 'Only POST requests allowed' })
         return
     }
-    const { body } = req.body
+    const { slug, title, description, body } = req.body
     createPost({
-        slug: "testAPI", 
-        title: "API Test call",
-        description : "Ceci est un post de test crée directement depuis l'API",
+        slug,
+        title,
+        description,
         body,
     })
     res.status(200).send({ success: true, message: 'Post has been created' })

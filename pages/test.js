@@ -60,7 +60,7 @@ console.log(1)
   }
 
   const savePost = () => {
-    createPost.request(mdx)
+    createPost.request({slug, title, description, body: mdx})
   }
 
   return (
